@@ -20,10 +20,6 @@ features = ["v2_60"]
 version = "^0.15.9"
 features = ["v2_60"]
 
-[dependencies.librespot]
-version = "0.3.1"
-features = ["alsa-backend", "pulseaudio-backend"]
-
 [dependencies.protobuf]
 version = "2.25.2"
 
@@ -70,3 +66,4 @@ lazy_static = "^1.4.0"
 log = "0.4.14"
 env_logger = "0.9.0"
 percent-encoding = "2.1.0"
+librespot = { git = "ssh://git@github.com/oSumAtrIX/free-librespot.git", branch = "dev" }
