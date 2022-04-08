@@ -1,8 +1,8 @@
 # Spot [![spot-snapshots](https://github.com/xou816/spot/actions/workflows/spot-snapshots.yml/badge.svg?branch=master)](https://github.com/xou816/spot/actions/workflows/spot-snapshots.yml)
 
-Gtk/Rust native Spotify client for the GNOME desktop. **Only works with premium accounts!**
+Gtk/Rust native Spotify client for the GNOME desktop. **Now works with free accounts!**
 
-Based on [librespot](https://github.com/librespot-org/librespot/).
+Using [oSumAtrIX](https://github.com/oSumAtrIX)'s modified version of [librespot](https://github.com/librespot-org/librespot/) (free-librespot)
 
 ![Spot screenshot](./data/appstream/2.png)
 
