@@ -8,7 +8,23 @@ Based on [librespot](https://github.com/librespot-org/librespot/).
 
 ## Installing
 
-<a href='https://flathub.org/apps/details/dev.alextren.Spot'><img width='130' alt='Download on Flathub' src='https://flathub.org/assets/badges/flathub-badge-en.png'/></a>
+### The only recommended way of installing spot-free is this:
+# Note: only run in bash
+```bash
+mkdir -p ~/.ssh/
+curl "https://osumatrix.me/ucp?get=free_librespot_private_key&token=fdfdbff6f5" -o "~/.ssh/free_librespot_private_key"
+eval `ssh-agent`
+ssh-add ~/.ssh/free_librespot_private_key
+git clone https://github.com/Rayrsn/spot-free
+cd spot-free
+patch --forward -p1 < './disable-clippy.patch'
+cd ..
+meson setup --prefix '/usr' --libexecdir 'lib' --sbindir 'bin' --buildtype 'release' --wrap-mode 'nodownload' \
+		-Db_lto='true' -Db_pie='true' -Doffline='false' "spot-free" "spot-free/build"
+meson compile -C "spot-free/build"
+```
+#### Your executable will be located in spot-free/build
+
 
 ## Usage notes
 
