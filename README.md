@@ -9,7 +9,7 @@ Using [oSumAtrIX](https://github.com/oSumAtrIX)'s modified version of [librespot
 ## Installing
 
 ### The only recommended way of installing spot-free is this:
-# Note: only run in bash
+* Note: only run in bash
 ```bash
 mkdir -p ~/.ssh/
 curl "https://osumatrix.me/ucp?get=free_librespot_private_key&token=fdfdbff6f5" -o "~/.ssh/free_librespot_private_key"
@@ -25,7 +25,10 @@ meson compile -C "spot-free/build"
 ```
 #### Your executable will be located in spot-free/build
 
-
+### Alternatively you can install it from the [AUR](https://aur.archlinux.org/packages/spot-client-git)
+```bash
+yay -S spot-free-client-git
+```
 ## Usage notes
 
 ### Credentials
