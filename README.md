@@ -25,9 +25,16 @@ meson compile -C "spot-free/build"
 ```
 #### Your executable will be located in spot-free/build
 
-### Alternatively you can install it from the [AUR](https://aur.archlinux.org/packages/spot-client-git)
+### ~~Alternatively you can install it from the [AUR](https://aur.archlinux.org/packages/spot-client-git)~~
 ```bash
 yay -S spot-free-client-git
+```
+
+#### ⚠️ The package is removed from the AUR due to changing ssh configs in the home folder but you can still use the `PKGBUILD`
+
+Download it from [here](https://raw.githubusercontent.com/Rayrsn/spot-free/development/PKGBUILD) and move it to a temporary folder and run
+```bash
+makepkg -si
 ```
 ## Usage notes
 
